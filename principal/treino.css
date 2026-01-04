@@ -89,7 +89,8 @@ main#bordaradius {
     padding: 12px;
     border: #000 solid 5px;
     border-radius: 0px 50px 50px 50px;
-    margin-left: 10em;
+    margin-left: 7em;
+    min-width: 200px;
 }
 
 
