@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parágrafos</title>
+    <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="Firstfear-Whistlepuff-Html.ico" type="image/x-icon">
+
+    <style>
+        pre {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+        }
+
+        code {
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        a {
+            font-family: 'Parisienne', cursive;
+            font-size: 20px;
+            background-color: yellow;
+            color: red;
+            display: inline-block;
+            text-decoration: none;
+            border-radius: 15px;
+            padding: 10px;
+            border: red 2px solid;
+        }
+
+        .teste p {
+            color: blue;
+            font-size: 25px;
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+
+</head>
+<body>
+
+    <h1>Este link deve mandar para a pagina 2:</h1>
+    <a href="pagina2.html" rel="next"> Pagina 2</a>
+
+    <h1>Testando carga de imagens</h1>
+    <hr>
+    <p>Você pode escrever um parágrafo de qualquer jeito, só basta colocar o texto entre a tag &lt;p&gt; e &lt;/p&gt; </p>
+    <p>Se presisar quebrar o <br> texto use a tag &lt;br&gt; </p>
+    &reg;
+    &copf;
+    &trade;
+    &euro;
+    &yen;
+    &cent;
+    &Delta;
+    &delta;
+    &uparrow;
+    &downarrow;
+    <marquee behavior="" direction=""><img src="https://images.seeklogo.com/logo-png/25/2/javascript-logo-png_seeklogo-255387.png" alt="kl"></marquee>
+    <h2><address>Lorem <u>ipsum dolor sit amet</u> consectetur <ins>adipisicing</ins> elit.<small> Ab sequi vero, magnam beatae quis enim molestias alias quod </small>itaque velit voluptatum ex <big>nisi in ea minus iste exercitationem id</big> <del>voluptatibus!</del></address></h2>
+
+    
+        <h2><ins>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</ins> Ipsam doloribus aspernatur sed! Ab eos mollitia neque et error. Sint corrupti quasi <code>temporibus ducimus laudantium natus</code>, iste voluptas repudiandae alias obcaecati! H<sub>2</sub>O 2x<sup>2</sup></h2>
+
+        <h6>
+            Exemplo de código simples em linguegem C:
+            <pre>
+                <code>
+                    int main()
+                    {
+                        int base [10];
+                        for (int i = 0; i < 10; i = i + 1)
+                        {
+                            printf ("Digite a base do retângulo:");
+                            scanf("%d", &base[i]);
+                        }
+                    }
+                </code>
+            </pre>
+        </h6>
+
+        <p><pre> Meu vô                  meu pai</pre></p>
+
+        <p><q>chutar no enem é igual pegar casada, é arriscado mas vale a pena.</q> quem disse isso foi Neymar Junior. </p>
+
+        <blockquote cite="">
+            <p>Esse é um exemplo de citação em bloco. Você pode usar a <abbr title="são blocos de citação usados para executar algumas ações em HTML e CSS">tag</abbr> &lt;blockquote&gt; para destacar citações longas ou importantes em seu texto. Ela geralmente adiciona uma indentação especial para diferenciar a citação do restante do conteúdo.</p>
+        </blockquote>
+
+        <h1><strong>Listas ordenadas:</strong></h1> <!-- type="1, A, a, I, i" -->
+        <ol type="a" start="2">
+            <li><ins>Item 1</ins></li>
+            <li><ins>Item 2</ins></li>
+                <ol>
+                    <li>Subitem 2.1</li>
+                    <li>Subitem 2.2</li>
+                </ol>
+            </li>
+            <li>Item 3</li>
+
+            <h1> Lista reversa:</h1>
+
+            <ol type="I" start="4" reversed>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+            </ol>
+
+            <h1>Listas não ordenadas:</h1>
+            <ul type="square"> <!-- circle, disc, square -->
+                <li>Item A</li>
+                <li>Item B</li>
+                <li>Item C</li>
+            </ul>
+
+            <h1>Misturando listas:</h1> 
+            <ol type="I">
+                <li>árvore</li>
+                <li>frutas
+                    <ul type="disc">
+                        <li>manga</li>
+                        <li>uva</li>
+                    </ul>
+                </li>
+                <li>suco</li>
+            </ol>
+
+            <h1>Lista de definição:</h1>
+            <dl>
+                <dt><strong>HTML</strong></dt>
+                <dd>É uma linguagem de marcação utilizada para estruturar o conteúdo na web.</dd>
+
+                <dt><strong>CSS</strong></dt>
+                <dd>É uma linguagem de estilo usada para descrever a apresentação de um documento HTML.</dd>
+
+                <dt><strong>JavaScript</strong></dt>
+                <dd>É uma linguagem de programação que permite criar conteúdo interativo em páginas web.</dd>
+
+                </dl>
+
+                <h1 style="font-size: 100px;">Links</h1>
+
+                <p>Esse é meu repositório público do github:</p>
+                <abbr title="Essa é a minha conta no GitHub"><a href="https://github.com/Ex-Stras" target="_blank" rel="external">Ex-Stras</a></abbr>
+
+
+        
+
+
+                <h1>LINKS</h1>  
+        <ul>
+            <li> <a href="http://www.obmep.org.br"> OBMEP </a></li>
+            <li><a href="http://github.com">GitHub</a></li>
+            <li><a href="http://www.python.org">Python</a></li>
+            <li><a href="http://www.w3schools.com">W3Schools</a></li>
+            <ul>
+                <li><a href="CSS estética - HUGO tópicos.zip" download="CSS estética - HUGO tópicos.zip" type="application/zip">Baixar pdf</a></li>
+            </ul>
+        </ul>
+
+        
+    <p>Emojis: 🔥 💀 ❤️ ✅ ✨</p>
+
+    <h3> Essa imagem vai diminuir e aumentar de tamanho sozinha de acordo com o tamanho da tela:
+    </h3>
+   
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/imagem1.png" type="image/png">
+         <source media="(max-width: 1050px)" srcset="imagens/imagem2.png" type="image/png">
+        <img src="imagens/imagem3.png" alt="">
+    </picture>
+
+    <h1>ÁUDIOS</h1>
+    <p>Vamos mexer com áudios em HTML:5</p>
+    <audio preload="metadata" autoplay controls>
+        <source src="vine-boom.mp3" type="audio/mpeg">
+        <source src="vine-boom.ogg" type="audio/ogg">
+        <source src="vine-boom.wav" type="audio/wav">
+        <p>Seu navegador não suporta o elemento de áudio, clique aqui para baixar o arquivo: <a href="vine-boom.mp3"></a></p>  
+    </audio>
+    <!--Os possiveis formatos de áudio são: mp3, wav, ogg-->
+
+    <h1>Insirindo videos em HTML5</h1>
+    <p>Este vídeo está hospedado no meu próprio servidor:</p>
+    <video controls poster="https://tse1.mm.bing.net/th/id/OIP.8cEFlGZaT0UyCv2SS8vNrAHaEv?rs=1&pid=ImgDetMain&o=7&rm=3" width="560" height="315">
+      <source src="midia/outro-video.mp4" type="video/mp4">
+      <source src="midia/mais-outro.webm" type="video/ogg">
+        <p>Seu navegador não suporta o elemento de vídeo, clique aqui para baixar o arquivo: <a href="midia/outro-video.mp4">Vídeo</a></p>
+    </video>
+
+    <h1>Colocando vídeos do Youtube no site direto do Youtube</h1>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/OzUnqQk4eOg?si=9guNCRPuQk1n0CFl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <h2>Tem o Vimeo também, só que é pago!</h1>
+
+    <h1>Começando CSS</h1>
+    <h2>Metodo Inline(não recomendado)</h2>
+    <p style="color: red;">Esse parágrafo tem a cor diferente dos demais</p>
+    <p>Esse parágrafo está em cor padrão.</p>
+    <p style="color: blue;">E esse está azul</p>
+    <p style="font-family: Arial, sans-serif;">Esse tem uma fonte diferente</p>
+    <p style="font-size: 30px;">Esse mesmo estando na tag &lt;p&gt; está maior que os demais</p>
+    <p style="text-align: center;">Esse está em uma posição diferente dos demais</p>
+
+    <h2> Estilos locais/internos (utilizável mas não é o ideal)</h2>
+
+    <div class="teste">
+    <p>Este parágrafo está dentro de uma div com a classe "teste", que foi definida no CSS local/interno. Por isso ele é totalmente estilizado.</p>
+    </div>
+
+    <h2> Estilos locais/externos (ideal)</h2>
+
+    <p>Vamos criar uma página totalmente nova para trabalhar com estilos locais/externos. Vamos trabalhar só com ela a partir de agora.
+    </p>
+    <a href="treino+.html">Nova página</a>
+
+
+    
+</body>
+</html> 

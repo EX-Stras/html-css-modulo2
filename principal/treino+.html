@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu novo treino</title>
+    <link rel="stylesheet" href="treino.css">
+    <style>
+
+     @font-face {
+        font-family: "Super Croissant";
+        src: url(Super\ Croissant.ttf);
+     }
+
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+      a {
+        color: rgb(255, 0, 0);
+      }
+
+      a:visited {
+        color: rgb(0, 0, 255);
+      }
+
+      a:active {
+        color: rgb(255, 255, 0);
+      }
+
+      a:hover {
+        text-decoration: none;
+        color: rgb(255, 106, 0);
+      }
+
+      span > a::after {
+        content: " (clique aqui para acessar o repositório)";
+        color: green;
+        text-decoration: #252733 underline;
+      }
+
+      span > a::before {
+        content: "→ ";
+      }
+
+</style>
+
+</head>
+<body>
+    <h1>Meu novo treino</h1>
+
+    <p>Estamos trabalhando com estilos locais/externos agora.</p>
+
+    <p>Estes parágrafos estão no centro por conta do css da pagina <a href="treino.css">treino.css</a></p>
+
+    <p>Voltando aos nomes, no mesmo arquivo eu posso ter CSS inline, interno e externo(o inline prevalece sobre o interno e o interno prevalece sobre o externo).</p>
+
+    <h1>Cores em CSS - CAP 13</h1>
+    <p>Esses parágrafos são um teste de cores que vamos aplicar de diferentes formas:</p>
+    <h2>Nomes:</h2>
+    <p style="color:blue; background-color: red;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem sit esse quibusdam id eveniet laborum totam, libero consequuntur nobis nihil omnis amet beatae minus provident quis? Veritatis autem corrupti debitis.</p>
+
+    <h2>Hexadecimal:</h2>
+    <p style="color:#00f; background-color: #f00;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo quae ducimus asperiores, sunt quibusdam cupiditate vitae aut ipsa modi? Consectetur quam molestiae quasi quae illo natus earum omnis, error perferendis?</p>
+    
+    <h2>RGB:</h2>
+    <p style="color: rgb(0, 0, 255); background-color: rgb(255, 0, 0);">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo quae ducimus asperiores, sunt quibusdam cupiditate vitae aut ipsa modi? Consectetur quam molestiae quasi quae illo natus earum omnis, error perferendis?</p>
+
+    <h2>HSL:</h2>
+    <p style="color: hsl(240, 100%, 50%); background-color: hsl(0, 100%, 50%);">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo quae ducimus asperiores, sunt quibusdam cupiditate vitae aut ipsa modi? Consectetur quam molestiae quasi quae illo natus earum omnis, error perferendis?</p>
+
+    <h1>Gradiente:</h1>
+
+    <p style="background-image: linear-gradient(to bottom, yellow, purple);">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus eaque numquam, quasi deserunt ea perspiciatis natus quas placeat dolore officia ducimus, sit est commodi, provident et sed facilis eos aut.</p>
+
+    <h1>Trabalhando com fontes: - CAP 14</h1>
+    <p style="font-family: inherit;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam iure dolore eveniet aperiam, voluptatum, facilis fugiat expedita laboriosam voluptatem non necessitatibus fuga. Ducimus deleniti aut blanditiis aliquid, deserunt fuga unde.</p>
+    <h2>Subtítulo:</h2>
+    <p style="font-family: inherit;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel possimus consequatur cupiditate ex quam incidunt beatae quaerat illum hic voluptatem, animi aut doloribus consequuntur dolorem mollitia earum blanditiis dolorum at.</p>
+
+    <h1>Tamanho da fonte e suas medidas:</h1>
+
+    <div style="font-size: 16px;">
+    <p>Medidas absolutas: cm, mm, in, px, pt, pc</p>
+
+    <p>Medidas relativas: em, ex, rem, ch, vw, vh, vmin, vmax, %</p>
+
+    <p>As recomendadas são: "px" e "em"</p>
+    <p>"em" é uma unidade relativa ao tamanho da fonte do elemento pai.</p>
+    <p>Exemplo: Se o tamanho da fonte do elemento pai for 16px, 1em = 16px, 2em = 32px, 0.5em = 8px</p>
+    <p>Já o "px" é uma unidade absoluta, ou seja, não depende do tamanho da fonte do elemento pai.</p>
+    </div>
+
+    <h1>Fontes externas: (com google fonts)</h1>
+
+    <p style="font-family: Kaushan Script, cursive;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus sunt, harum blanditiis exercitationem ea laboriosam. Excepturi, quidem suscipit! Quia quaerat aliquid aliquam mollitia quos, dignissimos accusantium quam? Dolore, veniam minus.</p>
+
+    <h1>Fontes externas: (sem google fonts)</h1>
+
+    <p style="font-family: Super Croissant, cursive;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus sunt, harum blanditiis exercitationem ea laboriosam. Excepturi, quidem suscipit! Quia quaerat aliquid aliquam mollitia quos, dignissimos accusantium quam? Dolore, veniam minus.</p>
+
+    <h1>Alinhamento de textos:</h1>
+
+    <p>A frase: "Eu sou hétero" vai aparecer em 3 alinhamentos diferentes abaixo:</p>
+
+    <p style="text-align: left;">Eu sou hétero</p>
+    <p style="text-align: center;">Eu sou hétero</p>
+    <p style="text-align: right;">Eu sou hétero</p>
+
+    <p>O texto normalmente tem um alinhamento chamado "justify", que alinha o texto a ambos os lados da linha.</p>
+
+    <p style="text-align: justify;">Esse texto é um exemplo desse alinhamento. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel error eos quis consectetur impedit qui soluta eaque dolor nulla enim recusandae quisquam tempora, asperiores molestiae amet laboriosam cupiditate ea inventore? Lorem ipsum dolor sit amet consectetur adipisicing elit. Est asperiores placeat nobis perspiciatis earum minima minus atque, tempore sapiente at voluptate laudantium sint architecto accusantium, obcaecati iure? Eveniet, architecto magni.</p>
+
+    <p>A tag text-indent é usada para indentar o primeiro parágrafo de um bloco de texto.</p>
+.
+    <p style="text-indent: 0.5em;">Este parágrafo tem um indentação de 0,5em.</p>
+
+    <h1>Seletores personalizados: - CAP 15</h1>
+
+    <h2>Esses h4 vão ter cores diferentes apesar de serem a mesma declaração: (usando IDs)</h2>
+
+    <h4 id="principal">Esse é um dos 2 únicos h4 do site</h4>
+
+    <h4 id="secundário">Esse é um dos 2 únicos h4 do site</h4>
+
+    <p>A w3c não recomenda que coloque mais de um elemento com o mesmo ID em uma página. Para isso usamos as classes.</p>
+
+     <h2>Esses h4 vão ter cores iguais usando a mesma classe:</h2>
+
+    <h4 class="destaque">Esse é um dos vários h4 do site</h4>
+
+    <h4 class="destaque">Esse é um dos vários h4 do site</h4>
+
+    <h1>Pseudo classes:</h1>
+
+    <p>As chamadas divs ocupam o documento de ponta a ponta, como é possivel analisar a seguir:</p>
+
+    <p>
+        <div style="background-color: #DBB02D;">oi</div>
+    </p>
+
+    <p>Tem como modificar o comportamento de elementos com divs:</p>
+
+    <p>
+        <div style="width: 100px; height: 100px; background-color: #DBB02D; text-align: center; margin: auto; display: inline-block;">oi</div>
+        <div style="width: 100px; height: 100px; background-color: #DBB02D; text-align: center; margin: auto; display: inline-block;">oi</div>
+        <div style="width: 100px; height: 100px; background-color: #DBB02D; text-align: center; margin: auto; display: inline-block;">oi</div>
+        <div style="width: 100px; height: 100px; background-color: #DBB02D; text-align: center; margin: auto; display: inline-block;">oi</div>
+        <div style="width: 100px; height: 100px; background-color: #DBB02D; text-align: center; margin: auto; display: inline-block;">oi</div>
+        <div style="width: 100px; height: 100px; background-color: #DBB02D; text-align: center; margin: auto; display: inline-block;">oi</div>
+    </p>
+
+    <p>Agora sobre as pseudo classes:</p>
+    <p style="text-align: left;">Elas são usadas para modificar o comportamento de elementos com base em seu estado ou posição no documento. São representadas por palavras-chave como :hover, :focus, :first-child, etc.</p>
+
+    <p style="text-align: left;">A pseudo classe :hover é usada para modificar o comportamento de um elemento quando o mouse passa sobre ele. para usa-las basta adicionar o :hover após o seletor do elemento.</p>
+
+    <div id="oval" style="background-color: gray;">passe o mouse nas letras para ele sumir <span style="color: gray;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid animi alias suscipit praesentium itaque eaque nam tenetur assumenda? Sapiente dolorem deserunt consequuntur reiciendis error rerum ratione itaque quam eos minima. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque magni ad praesentium exercitationem dolores repudiandae assumenda, quia vitae possimus libero. Dolores laboriosam alias quas odio ex! Delectus corrupti ipsum pariatur!Lorem</span></div>
+
+    <p class="box">olá</p>
+
+    <div id="esconder" style="color: red; background-color: black;">
+       <pre>  que belo dia não é mesmo?
+
+                                               <p>texto escondido...</p>
+
+                                               <p>o texto aí</p>
+       </pre>
+    </div>
+
+
+    <code>não clique aqui!!!!</code>
+
+    <p>A pseudo classe :visited a seguir:</p>
+
+        <a href="https://github.com/EX-Stras/imagens-compartilhadas">https://github.com</a>
+        <a href="https://r.search.yahoo.com/_ylt=Awrjg9mufD9pjUEOyIjz6Qt.;_ylu=Y29sbwNiZjEEcG9zAzEEdnRpZAMEc2VjA3Ny/RV=2/RE=1766977967/RO=10/RU=https%3a%2f%2fwww.tuasaude.com%2finformacao-nutricional-do-ovo%2f/RK=2/RS=MFmo65JCMx7dF.KbKDJcc_D.ODk-">https://r.search.yahoo.com/_ylt=Awrjg9mufD9pjUEOyIjz6Qt.;_ylu=Y29sbwNiZjEEcG9zAzEEdnRpZAMEc2VjA3Ny/RV=2/RE=1766977967/RO=10/RU=https%3a%2f%2fwww.tuasaude.com%2finformacao-nutricional-do-ovo%2f/RK=2/RS=MFmo65JCMx7dF.KbKDJcc_D.ODk-</a>
+
+        <p>Tem mais uma pseudo classe aqui bem mé, a :active, ela que faz o link ficar amarelo desse jeito quando vc clica.</p>
+
+        <h1>Pseudo elementos:</h1>
+        <p>Eles são usados para modificar o comportamento de elementos com base em seu estado ou posição no documento. São representados por palavras-chave como ::before, ::after, etc.</p>
+
+        <p>Não vou adentrar muito, mas aqui um exemplo do ::after e do ::before :</p>
+
+
+
+        <span><a href="https://github.com/EX-Stras/imagens-compartilhadas">https://github.com/EX-Stras/imagens-compartilhadas</a></span>
+    </div>
+
+    <h1>Modelo de caixas: - Cap 16</h1>
+
+    <p>Box-level:</p>
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima <p></p>nisi harum dolore. Ipsam maxime quis ab corrupti explicabo, quasi,<h1></h1> iste nulla suscipit aut, impedit soluta quos nemo corporis voluptatibus quod.</p>
+
+    <p>Inline-level:</p>
+    
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium veniam amet fugiat facere illo <span></span>reprehenderit ipsum ratione nihil
+       qui doloribus laboriosam iusto cupiditate, ipsam architecto sit natus placeat praesentium eius.</p>
+
+       <main id="li">
+        <h1 style="margin: auto;">Olá, isso é uma caixa!</h1>
+
+       </main>
+
+       <h2>Grouping tags:</h2>
+       
+       <p>São tags de grupos específicos do site, por exemplo &lt;header&gt;, ela representa o cabeçalho do site, &lt;main&gt;, ela representa o conteúdo principal do site, &lt;footer&gt;, ela representa o rodapé do site, &lt;nav&gt;, ela representa a navegação do site, &lt;section&gt;, ela representa uma seção do site, &lt;article&gt;, ela representa um artigo do site, &lt;aside&gt;, ela representa um conteúdo lateral do site.</p>
+
+       <h2>Sombras:</h2>
+
+       <main id="sombradecaixa">
+        <h1 style="margin: auto;">Olá, isso é uma caixa com sombra!</h1>
+
+        
+       </main>
+
+
+       <h1>Border Radius:</h1>
+
+       <p style="font-size: 100px; display: inline;">😊</p><main id="bordaradius">
+            <h1 style="margin: auto;">Olá, isso é uma caixa com borda arredondada! Assim eu fiz um balão de texto!</h1>
+
+        </main>
+
+        <h1>Variáveis em CSS:</h1>
+
+        <p id="testvarcor">O background é azul e o texto é branco! (essas cores foram definidas com variáveis CSS).</p>
+
+        <p id="testvarfont">Esta frase está usando a fonte definida com variáveis CSS.</p>
+
+
+
+
+
+</body>
+</html>
